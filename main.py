@@ -142,8 +142,6 @@ class DecisionTreeClassifier:
         plt.title("Decision Tree Decision Boundary")
         plt.show()
 
-
-
 # Example usage
 if __name__ == "__main__":
     from sklearn.datasets import load_iris
@@ -163,5 +161,5 @@ if __name__ == "__main__":
     print("\nDecision Tree:")
     clf.print_tree(feature_names=data.feature_names)
 
-    # Plot decision boundary for two features (sepal length, sepal width)
-    clf.plot_2d(X_train[:, :2], y_train, feature_idx=(0, 1))
+# Plot decision boundary for two features (sepal length, sepal width)
+clf.plot_2d(X_train[:, :2], y_train, feature_idx=(0, 1))
